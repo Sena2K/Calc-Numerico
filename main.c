@@ -8,7 +8,7 @@ double f(double x);
 int main() {
     double tolerancia = 1e-5;
     int max_passos = 10;
-    double x[] = {-1, 1};  
+    double x[] = {5.5, 12};  
     int nr_raizes = sizeof(x) / sizeof(x[0]);  
 
     Zero *zeros = (Zero *)malloc(nr_raizes * sizeof(Zero));
@@ -38,4 +38,4 @@ int main() {
 
 // Função f(x)
 // Esta função utilizará as funções elementares desenvolvidas em mat.c
-double f(double x) { return sqrtMeu(2); }
+double f(double x) { return sinMeu(x); }
